@@ -1,5 +1,6 @@
 package com.example.sarapavas.notasapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.content.Intent;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 proy =  Double.parseDouble(eProy.getText().toString());
                 prac =  Double.parseDouble(ePrac.getText().toString());
 
-                notaFinal = 0.2*exp + 0.4*proy+0.4*prac;
+                notaFinal = 0.15*exp + 0.35*proy+0.5*prac;
 
                 tNotaFinal.setText(Double.toString(notaFinal));
 
@@ -54,6 +57,11 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         if(id == R.id.menu_configurar){
             Toast.makeText(this, "Ha presionado opcion configurar",Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(this, settings.class);
+            i.putExtra("pProy",35);
+            i.putExtra("pExp",15);
+            i.putExtra("pPrac",50);
+            startActivity(i);
             return true;
         }
         return super.onOptionsItemSelected(item);
