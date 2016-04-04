@@ -1,12 +1,24 @@
 <resources>
     <string name="app_name">NotasApp</string>
-    <string name="expo">Exposiciones</string>
-    <string name="prac">Prácticas</string>
-    <string name="proy">Proyecto</string>
+    <string name="expo">Exposiciones: </string>
+    <string name="prac">Prácticas: </string>
+    <string name="proy">Proyecto: </string>
     <string name="calc">calcular</string>
     <string name="notaFinal">Nota Final</string>
-    <string name="titulo">Porcentajes</string>
+    <string name="titulo">Porcentajes (%)</string>
     <string name="guardar">Guardar</string>
     <string name="configurar">configurar</string>
     <string name="acerca">Acerca De ...</string>
+    <string name="borrar">Limpiar</string>
+    <string name="pPra"> (50%) </string>
+    <string name="pExp"> (15%) </string>
+    <string name="pProy"> (35%) </string>
+    <string name="modificar">No se modificó porcentajes</string>
+    <string name="EspaciosBlanco">Hay porcentajes sin completar</string>
+    <string name="suma">La suma de los porcentajes debe ser 1.</string>
+    <string name="notaexpo">El valor de la nota de exposición debe estar  0.0 y 5.0</string>
+    <string name="notaprac">El valor de la nota de prácticas debe estar  0.0 y 5.0</string>
+    <string name="notaproy">El valor de la nota de proyecto debe estar  0.0 y 5.0</string>
+    <string name="bConfigurar">Ha ingresado a la opción configurar</string>
+
 </resources>

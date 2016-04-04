@@ -15,7 +15,8 @@
         android:layout_height="wrap_content"
         android:text="@string/titulo"
         android:textSize="30sp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:textColor="@color/purple"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,42 +24,53 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:textColor="@color/orangered"
+            style="@style/myDime.texto"
             android:text="@string/proy"
-            android:textSize="20sp"/>
-
+            />
+        <TextView
+            android:textColor="@color/orangered"
+            style="@style/myDime"
+            android:id="@+id/tpProy" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/Pproy" />
+            android:id="@+id/Pproy"
+            android:inputType="numberDecimal" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/expo"
-            android:textSize="20sp"/>
+            android:textColor="@color/green"
+            style="@style/myDime.texto"
+            android:text="@string/expo" />
+        <TextView
+            android:textColor="@color/green"
+            style="@style/myDime"
+            android:id="@+id/tpExpo" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/Pexpo" />
+            android:id="@+id/Pexpo"
+            android:inputType="numberDecimal"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/prac"
-            android:textSize="20sp"/>
-
+            android:textColor="@color/orangered"
+            style="@style/myDime.texto"
+            android:text="@string/prac" />
+        <TextView
+            android:textColor="@color/orangered"
+            style="@style/myDime"
+            android:id="@+id/tpPrac" />
         <EditText
+            android:inputType="numberDecimal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/Pprac" />
@@ -67,7 +79,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/guardar"
-        android:id="@+id/guardar"/>
+        android:id="@+id/guardar"
+        android:layout_gravity="center"
+        android:textColor="@color/purple"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="start"
+        android:layout_weight="1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/borrar"
+        android:id="@+id/borrar"
+        android:layout_gravity="right"
+        android:textColor="@color/green"/>
 
 
 

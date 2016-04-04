@@ -12,9 +12,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="2"
         android:text="@string/app_name"
         android:textSize="30sp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:textColor="@color/purple"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,29 +24,40 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/myDime.texto"
             android:text="@string/proy"
-            android:textSize="20sp"/>
-
+            android:textColor="@color/green"
+            />
+        <TextView
+            style="@style/myDime.texto.peque"
+            android:id="@+id/tpProy"
+            android:text="@string/pProy"
+            android:textColor="@color/green"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/proy" />
+            android:inputType="numberDecimal"
+            android:id="@+id/proy"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/expo"
-            android:textSize="20sp"/>
-
+            android:textColor="@color/orangered"
+            style="@style/myDime.texto"
+            android:text="@string/expo" />
+        <TextView
+            android:textColor="@color/orangered"
+            style="@style/myDime.texto.peque"
+            android:id="@+id/tpExpo"
+            android:text="@string/pExp"
+            />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
             android:id="@+id/expo" />
     </LinearLayout>
     <LinearLayout
@@ -52,25 +65,42 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/myDime.texto"
             android:text="@string/prac"
-            android:textSize="20sp"/>
+            android:textColor="@color/green"/>
+        <TextView
+            style="@style/myDime.texto.peque"
+            android:id="@+id/tpPrac"
+            android:text="@string/pPra"
+            android:textColor="@color/green"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
             android:id="@+id/prac" />
     </LinearLayout>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/calc"
-        android:id="@+id/calc"/>
+        android:id="@+id/calc"
+        android:layout_gravity="center"
+        android:textColor="@color/purple"/>
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/NotaFinal"/>
+        android:layout_height="0dp"
+        android:id="@+id/NotaFinal"
+        android:gravity="start"
+        android:textSize="20dp"
+        android:layout_weight="1"/>
 
+    <Button
+        android:textColor="@color/orangered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/borrar"
+        android:id="@+id/borrar"
+        android:layout_gravity="right"/>
 
 </LinearLayout>
